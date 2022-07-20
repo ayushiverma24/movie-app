@@ -8,4 +8,4 @@ const MovieListing =()=>{
     )
 }
 
-export default MovieListing
+export default MovieListing;
