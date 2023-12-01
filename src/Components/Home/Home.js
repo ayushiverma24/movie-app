@@ -8,7 +8,6 @@ const Home =()=>{
     const movieText='harry';
     const dispatch =useDispatch();
 useEffect(()=>{
-    
     const fetchMovies = async()=>{
         const resp = await movieApi
         .get(`?apiKey=${API_KEY}&s=${movieText}&type=movie`)
@@ -16,7 +15,7 @@ useEffect(()=>{
             console.log("Errror whiel callling API", error);
         })
         console.log("Response = ", resp);
-        dispatch(addMovies(resp.data))
+        dispatch(addMovies(resp.data));
     }
     fetchMovies();
 },[])

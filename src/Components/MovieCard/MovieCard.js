@@ -7,7 +7,7 @@ const MovieCard =(props)=>{
         <div className="card-outer-container">
             <div className="card-inner-container">
                 <div className="movie-image-container">
-                    <img src={props.movieDetail.Poster}/>
+                    <img src={props.movieDetail.Poster} alt='movie-poster'/>
                 </div>
                 <div className="card-info">
                 <h5>{Title}</h5>
