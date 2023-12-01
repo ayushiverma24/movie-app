@@ -1,0 +1,17 @@
+@import '../src/common/Colors.scss';
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: $primary-color;
+}
+.app-container{
+    margin: 0px 40px;
+}

@@ -1,8 +1,19 @@
 import React from "react"
-const MovieCard =()=>{
+import './MovieCard.scss';
+const MovieCard =(props)=>{
+    console.log(props);
+    const {Poster, Title, Type, Year} = props.movieDetail;
     return(
-        <div>
-            MovieCard
+        <div className="card-outer-container">
+            <div className="card-inner-container">
+                <div className="movie-image-container">
+                    <img src={props.movieDetail.Poster}/>
+                </div>
+                <div className="card-info">
+                <h5>{Title}</h5>
+                <p>{Year}</p>
+                </div>
+            </div>
         </div>
     )
 }
