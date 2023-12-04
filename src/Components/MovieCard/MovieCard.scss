@@ -3,6 +3,10 @@
 .card-outer-container{
     background-color: $secondary-color;
     cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.3s;
+    }
 }
 .movie-image-container{
     height: 300px;

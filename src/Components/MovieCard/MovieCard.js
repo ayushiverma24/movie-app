@@ -1,10 +1,11 @@
 import React from "react"
 import './MovieCard.scss';
+import {Link} from 'react-router-dom';
 const MovieCard =(props)=>{
-    console.log(props);
-    const {Poster, Title, Type, Year} = props.movieDetail;
+    const { Title, Year, imdbID} = props.movieDetail;
     return(
         <div className="card-outer-container">
+            <Link to={`/movie-details/${imdbID}`}>
             <div className="card-inner-container">
                 <div className="movie-image-container">
                     <img src={props.movieDetail.Poster} alt='movie-poster'/>
@@ -14,6 +15,7 @@ const MovieCard =(props)=>{
                 <p>{Year}</p>
                 </div>
             </div>
+            </Link>
         </div>
     )
 }

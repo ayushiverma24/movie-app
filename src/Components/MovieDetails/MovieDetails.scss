@@ -1,0 +1,19 @@
+@import '../../common/Colors.scss';
+
+h1,p{
+    color:$font-primary;
+}
+.details-section{
+    display: flex;
+    padding: 10px 30px;
+    margin: 40px 70px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.left-panel-details{
+    margin-right:10px
+}
+.movie-paragraph{
+
+}
